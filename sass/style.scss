@@ -85,4 +85,15 @@ body {
     }
 }
 
+.footer {
+    background-color: #d2b6e9;
+    text-align: center;
+    padding: 20px;
+
+    &_copyright {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+}
+
 

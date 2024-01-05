@@ -12,6 +12,12 @@
   .nav_menu_links .link {
     font-size: 1.5em !important;
   }
+  .container .banner {
+    height: 100vh !important;
+  }
+  .container .banner .title h1 {
+    font-size: 4em;
+  }
 }
 * {
   margin: 0;
@@ -96,6 +102,19 @@ body {
 .footer_copyright {
   font-weight: bold;
   font-size: 1.3em;
+}
+
+.container .banner {
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/programming-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .banner .title {
+  text-align: center;
+  padding: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

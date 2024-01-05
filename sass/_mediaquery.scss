@@ -21,4 +21,17 @@
             }
         }
     }
+
+    .container {
+        
+        .banner {
+            height: 100vh !important;
+
+            .title {
+                h1 {
+                    font-size: 4em;
+                }
+            }
+        }
+    }
 }

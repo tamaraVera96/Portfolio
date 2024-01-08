@@ -25,13 +25,20 @@
     .container {
         
         .banner {
-            height: 100vh !important;
-
+            display: flex;
+            justify-content: center;
+            height: 90vh !important;
+            
             .title {
-                h1 {
+                h1,h2 {
                     font-size: 4em;
+                    &::before {
+                        filter: drop-shadow(0 0 20px #0000006f) drop-shadow(0 0 50px #000) !important;
+                    }
                 }
             }
         }
+
+        
     }
 }

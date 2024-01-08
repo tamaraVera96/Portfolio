@@ -13,10 +13,15 @@
     font-size: 1.5em !important;
   }
   .container .banner {
-    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    height: 90vh !important;
   }
-  .container .banner .title h1 {
+  .container .banner .title h1, .container .banner .title h2 {
     font-size: 4em;
+  }
+  .container .banner .title h1::before, .container .banner .title h2::before {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4352941176)) drop-shadow(0 0 50px #000) !important;
   }
 }
 * {
@@ -105,6 +110,17 @@ body {
 }
 
 .container .banner {
+  /*height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/programming-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+      text-align: center;
+      padding: 20%;
+  }*/
   height: 35vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,8 +129,34 @@ body {
   background-size: cover;
 }
 .container .banner .title {
-  text-align: center;
-  padding: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 33vh;
+}
+.container .banner .title h1, .container .banner .title h2 {
+  position: relative;
+  color: #e179cb;
+  overflow: hidden;
+}
+.container .banner .title h1::before, .container .banner .title h2::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #000;
+  animation: typing 10s steps(40) infinite;
+  filter: drop-shadow(0 0 20px #000) drop-shadow(0 0 50px #000);
+}
+@keyframes typing {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

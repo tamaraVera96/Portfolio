@@ -98,7 +98,7 @@ body {
 
 .container {
     .banner {
-        height: 35vh;
+        /*height: 35vh;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(../img/programming-banner.jpg);
@@ -108,7 +108,71 @@ body {
         .title {
             text-align: center;
             padding: 20%;
+        }*/
+        height: 35vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/programming-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            min-height: 33vh;
+
+            h1,h2 {
+                position: relative;
+                color: #e179cb;
+                overflow: hidden;
+
+                // &::before {
+                //     content: attr(data-text);
+                //     position: absolute;
+                //     color: #000;
+                //     overflow: hidden;
+                //     width: 150px;
+                //     white-space: nowrap;
+                //     border-right: 4px solid #000;
+                //     animation: welcome 8s linear infinite;
+                //     filter: drop-shadow(0 0 20px #000) drop-shadow(0 0 50px #000);
+                // }
+
+                &::before {
+                    content: attr(data-text);
+                    position: absolute;
+                    color: #000;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    border-right: 4px solid #000;
+                    animation: typing 10s steps(40) infinite;
+                    filter: drop-shadow(0 0 20px #000) drop-shadow(0 0 50px #000);
+                }
+            }
         }
+    }
+
+    .aboutMe {
+
     }
 }
 
+@keyframes typing {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+// @keyframes typing {
+//     from {
+//         width: 0;
+//     }
+//     to {
+//         width: 100%;
+//     }
+// }

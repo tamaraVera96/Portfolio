@@ -39,6 +39,31 @@
             }
         }
 
-        
+        .aboutMe {
+            &_information {
+                flex-direction: row !important;
+                padding: 2% !important;
+                
+                img {
+                    width: 35% !important;
+                }
+
+                p {
+                    font-size: 1em !important;
+                }
+            }
+        }
+
+        .projects {
+            &_container {
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+
+                .project_card {
+                    margin-left: 2%;
+                    width: 30% !important;
+                }
+            }
+        }
     }
 }

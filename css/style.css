@@ -81,6 +81,10 @@ body {
   height: 3em;
   margin-right: 10px;
 }
+.header .nav .logo .link_logo {
+  text-decoration: none;
+  color: black;
+}
 .header .nav_hamburger_menu {
   cursor: pointer;
 }
@@ -214,6 +218,9 @@ body {
 }
 .container .projects_container .project_card .project_title {
   font-size: 1em;
+  padding-bottom: 4%;
+}
+.container .projects_container .project_card .project_image {
   padding-bottom: 2%;
 }
 .container .projects_container .project_card .project_image img {
@@ -221,8 +228,26 @@ body {
   height: auto;
 }
 .container .projects_container .project_card .project_description {
-  font-size: 0.8em;
-  padding: 1% 0 2% 0;
+  font-size: 0.7em;
+  text-wrap: balance;
+  padding: 2% 0 4% 0;
+}
+.container .projects_container .project_card .project_technologies {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+}
+.container .projects_container .project_card .project_technologies p {
+  padding-bottom: 3%;
+  font-weight: bold;
+}
+.container .projects_container .project_card .project_technologies .img_technology {
+  width: 35px;
+}
+.container .projects_container .project_card .project_technologies .img_technology:hover {
+  box-shadow: 4px -3px 5px 1px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 4px -3px 5px 1px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 4px -3px 5px 1px rgba(0, 0, 0, 0.14);
 }
 .container .projects_container .project_card .project_link .btn_link {
   text-decoration: none;

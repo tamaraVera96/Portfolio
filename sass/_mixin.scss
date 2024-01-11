@@ -1,0 +1,13 @@
+@mixin z-index($value) {
+    .title {
+        z-index: $value;
+
+           h1,h2 {
+            z-index: $value;
+
+               &::before {
+                z-index: $value;
+               }
+           }
+       }
+  }

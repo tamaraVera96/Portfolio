@@ -41,6 +41,19 @@
     margin-left: 2%;
     width: 30% !important;
   }
+  .container .contact_container {
+    flex-direction: row-reverse !important;
+  }
+  .container .contact_container .contact_form {
+    width: 40% !important;
+  }
+  .container .contact_container img {
+    width: 40% !important;
+  }
+  .error {
+    color: red;
+    font-size: 0.7em;
+  }
 }
 * {
   margin: 0;
@@ -268,6 +281,72 @@ body {
 .container .projects_container .project_card .project_link .btn_link:hover {
   background-color: #d2b6e9;
 }
+.container .contact {
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+.container .contact h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.container .contact_container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 80%;
+  margin: auto;
+}
+.container .contact_container .contact_form {
+  padding: 5%;
+  width: 100%;
+  font-size: 0.8em;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  box-shadow: 3px -3px 5px 0px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 3px -3px 5px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 3px -3px 5px 0px rgba(0, 0, 0, 0.11);
+}
+.container .contact_container .contact_form form {
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .contact_container .contact_form form input, .container .contact_container .contact_form form textarea {
+  background-color: #efe6fe;
+  width: 100%;
+  padding: 3%;
+  border: 1px solid rgba(202, 47, 202, 0.8392156863);
+  margin: 3% auto 3% auto;
+  font-size: 0.9em;
+  border-radius: 4px;
+}
+.container .contact_container .contact_form form input[name=mensaje], .container .contact_container .contact_form form textarea[name=mensaje] {
+  height: 7em;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+.container .contact_container .contact_form form button {
+  width: 40%;
+  height: 2em;
+  background-color: #efe6fe;
+  border: 1px solid rgba(202, 47, 202, 0.8392156863);
+  border-radius: 8px;
+  margin: 4% auto 0 auto;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.container .contact_container .contact_form form button:hover {
+  background-color: #d2b6e9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container .contact_container img {
+  width: 55%;
+  margin: auto;
+  padding-bottom: 2%;
+}
 
 @keyframes typing {
   0%, 10%, 100% {
@@ -276,6 +355,10 @@ body {
   70%, 90% {
     width: 100%;
   }
+}
+.error {
+  color: rgb(227, 28, 28);
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -261,8 +261,8 @@ body {
                         color: black;
                         width: fit-content;
                         background-color: $secundary_bg;
-                        border-radius:28px;
-                        border:1px solid #ca2fcad6;
+                        border-radius: 28px;
+                        border: 1px solid #ca2fcad6;
                         display:inline-block;
                         cursor:pointer;
                         font-size:17px;
@@ -280,6 +280,84 @@ body {
             }
         }
     }
+
+    .contact {
+        font-size: 1.5em;
+        margin-bottom: 3%;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        &_container {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 80%;
+            margin: auto;
+
+            .contact_form {
+                padding: 5%;
+                width: 100%;
+                font-size: 0.8em;
+                background-color: whitesmoke;
+                border: 1px solid #ccc;
+                box-shadow: 3px -3px 5px 0px rgba(0,0,0,0.11);
+                -webkit-box-shadow: 3px -3px 5px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 3px -3px 5px 0px rgba(0,0,0,0.11);
+    
+                form {
+                    border-radius: 8px;
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    input, textarea {
+                        background-color: $secundary_bg;
+                        width: 100%;
+                        padding: 3%;
+                        border: 1px solid #ca2fcad6;
+                        margin: 3% auto 3% auto;
+                        font-size: 0.9em;
+                        border-radius: 4px;
+                        
+    
+                        &[name=mensaje] {
+                            height: 7em;
+                            font-family: Arial, Helvetica, sans-serif;
+                            resize: none;
+                        }
+                        
+                    }
+    
+                    button {
+                        width: 40%;
+                        height: 2em;
+                        background-color: $secundary_bg;
+                        border: 1px solid #ca2fcad6;
+                        border-radius: 8px;
+                        margin: 4% auto 0 auto;
+                        font-size: 0.9em;
+                        font-weight: 400;
+                    
+                        &:hover {
+                            background-color:$primary_bg;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+
+            img {
+                width: 55%;
+                margin: auto;
+                padding-bottom: 2%;
+            }
+        }
+
+    }
 }
 
 @keyframes typing {
@@ -289,6 +367,11 @@ body {
     70%, 90% {
         width: 100%;
     }
+}
+
+.error {
+    color : rgb(227, 28, 28);
+    font-size: 0.9em;
 }
 
 // @keyframes typing {

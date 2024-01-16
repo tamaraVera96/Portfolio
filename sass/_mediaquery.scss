@@ -65,5 +65,24 @@
                 }
             }
         }
+
+        .contact {
+            &_container {
+                flex-direction: row-reverse !important;
+                
+                .contact_form {
+                    width: 40% !important;
+                }
+
+                img {
+                    width: 40% !important;
+                }
+            }
+        }
+    }
+
+    .error {
+        color : red;
+        font-size: 0.7em;
     }
 }

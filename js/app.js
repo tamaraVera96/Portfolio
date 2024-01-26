@@ -1,3 +1,29 @@
+/*BANNER*/
+let btn_menu = document.getElementById("hamburger_menu");
+let title_banner = document.querySelector(".title");
+
+btn_menu.addEventListener("click", () => {
+    title_banner.style.display = (title_banner.style.display === 'none') ? 'flex' : 'none';
+})
+
+/*MENU*/
+//Función para cerrar el menú al dar click al enlace
+document.addEventListener("DOMContentLoaded", function() {
+    //Guardamos los enlaces en un array
+    const menuLinks = document.querySelectorAll('.nav_menu_links a');
+    //Guardamos el checkbox
+    const hamburgerCheckbox = document.getElementById('hamburger_menu');
+    
+    //Reccorremos el array
+    menuLinks.forEach(link => {
+    //Se agrega un evento click a cada enlace, para que cuando de clic en algún enlace se cierre el menú
+      link.addEventListener('click', function() {
+        hamburgerCheckbox.checked = false;
+      });
+    });
+  });  
+
+/*FORMULARIO CONTACTO*/
 //Captura elementos span(para mostrar error) por id
 let name_error = document.getElementById("name_error");
 let email_error = document.getElementById("email_error");

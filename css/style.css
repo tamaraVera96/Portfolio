@@ -147,17 +147,6 @@ body {
 }
 
 .container .banner {
-  /*height: 35vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/programming-banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .title {
-      text-align: center;
-      padding: 20%;
-  }*/
   height: 35vh;
   background-position: center;
   background-repeat: no-repeat;

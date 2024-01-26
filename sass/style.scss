@@ -19,9 +19,6 @@ body {
     background-color: $primary_bg;
     position: sticky;
     top: 0;
-    // width: 100%;
-    // top: 0;
-    // left: 0;
 
     .nav {
         height: 100%;
@@ -110,18 +107,8 @@ body {
 }
 
 .container {
-    .banner {
-        /*height: 35vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(../img/programming-banner.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
 
-        .title {
-            text-align: center;
-            padding: 20%;
-        }*/
+    .banner {
         height: 35vh;
         background-position: center;
         background-repeat: no-repeat;
@@ -141,17 +128,6 @@ body {
                 color: #e179cb;
                 overflow: hidden;
 
-                // &::before {
-                //     content: attr(data-text);
-                //     position: absolute;
-                //     color: #000;
-                //     overflow: hidden;
-                //     width: 150px;
-                //     white-space: nowrap;
-                //     border-right: 4px solid #000;
-                //     animation: welcome 8s linear infinite;
-                //     filter: drop-shadow(0 0 20px #000) drop-shadow(0 0 50px #000);
-                // }
 
                 &::before {
                     content: attr(data-text);

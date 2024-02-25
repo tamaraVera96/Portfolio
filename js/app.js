@@ -60,7 +60,10 @@ form.addEventListener("submit", e => {
     }
 
     let confirmation = document.querySelector(".confirmation");
-    confirmation.style.display = "block";
+    
+    if (validateName(name) && validateEmail(email) && validateSubjectAndMessage(subject, message)) {
+        confirmation.style.display = "block";
+    }
 })
 
 //Funciones - Validaciones 
